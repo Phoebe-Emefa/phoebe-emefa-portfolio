@@ -6,7 +6,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 ## 🔗 Live Demo
 
-[View Live Demo](https://phoebeagbesi.dev) *(Coming Soon)*
+[View Live Demo](https://phoebe-emefa-portfolio.vercel.app) 
 
 ## ✨ Features
 
@@ -42,7 +42,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 1. Clone the repository
    \`\`\`bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/Phoebe-Emefa/phoebe-emefa-portfolio.git
    cd portfolio-website
    \`\`\`
 
