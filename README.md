@@ -1,6 +1,6 @@
 # Phoebe Emefa Agbesi - Portfolio Website
 
-![Portfolio Preview](public/images/phoebe-working.jpg)
+![Portfolio Preview](public/images/phoebe-emefa-porfolio.png)
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. This portfolio showcases my projects, skills, and professional experience as a Frontend Engineer.
 
