@@ -54,10 +54,10 @@ const ContactSection = () => {
               </div>
 
               <div className="flex space-x-6">
-                <Link href="#" className="text-slate-400 hover:text-emerald-400 transition-colors duration-300">
+                <Link href="https://github.com/Phoebe-Emefa" target="_blank" className="text-slate-400 hover:text-emerald-400 transition-colors duration-300">
                   <Github className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="text-slate-400 hover:text-emerald-400 transition-colors duration-300">
+                <Link href="https://www.linkedin.com/in/phoebeemefaagbesi" target="_blank" className="text-slate-400 hover:text-emerald-400 transition-colors duration-300">
                   <Linkedin className="w-6 h-6" />
                 </Link>
               </div>
