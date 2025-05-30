@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Download, Menu, X } from "lucide-react"
+import {Eye, Menu, X } from "lucide-react"
 import Link from "next/link"
 
 const Navbar = ({ handleNavClick }: { handleNavClick: (section: string) => void }) => {
@@ -40,6 +40,9 @@ const Navbar = ({ handleNavClick }: { handleNavClick: (section: string) => void 
     setIsMobileMenuOpen(false)
   }
 
+  // Resume URL - properly formatted for Google Docs PDF export
+  const resumeUrl = "https://docs.google.com/document/d/1orSFbiM8SvDh5A7OcKAr-odDE08VHUU8BmLK6awLUYM/edit?usp=sharing"
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -68,17 +71,13 @@ const Navbar = ({ handleNavClick }: { handleNavClick: (section: string) => void 
 
           {/* Resume Button (Desktop) */}
           <div className="hidden md:block">
-            <Link
-              href="https://docs.google.com/document/d/your-resume-id/export?format=pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href={resumeUrl} target="_blank" rel="noopener noreferrer">
               <Button
                 variant="outline"
                 size="sm"
                 className="border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 transition-all duration-300 bg-transparent"
               >
-                <Download className="w-4 h-4 mr-2" />
+                <Eye className="w-4 h-4 mr-2" />
                 Resume
               </Button>
             </Link>
@@ -109,18 +108,13 @@ const Navbar = ({ handleNavClick }: { handleNavClick: (section: string) => void 
               </button>
             ))}
             <div className="pt-4 border-t border-slate-800 mt-4">
-              <Link
-                href="https://docs.google.com/document/d/your-resume-id/export?format=pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full"
-              >
+              <Link href={resumeUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
                 <Button
                   variant="outline"
                   className="w-full border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 transition-all duration-300 py-6 bg-transparent"
                 >
-                  <Download className="w-4 h-4 mr-2" />
-                  Download Resume
+                  <Eye className="w-4 h-4 mr-2" />
+                  View Resume
                 </Button>
               </Link>
             </div>
