@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, ArrowUpRight, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Users } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -32,25 +32,27 @@ const HeroSection = ({ handleNavClick }: { handleNavClick: (section: string) => 
               {/* Availability Badge */}
               <div className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-emerald-500/10 text-emerald-400 text-xs md:text-sm font-medium border border-emerald-500/20 shadow-lg">
                 <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-emerald-500 rounded-full mr-2 md:mr-3 animate-pulse"></div>
-                Available for frontend roles
+                Available for frontend & leadership roles
               </div>
 
               {/* Title + Description */}
               <div className="space-y-4 md:space-y-6">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-[1.1] tracking-tight font-poppins">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-[1.1] tracking-tight font-poppins">
                   Creative Frontend
                   <br />
                   <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent font-semibold">
-                    Engineer
+                    Developer
                   </span>
                 </h1>
 
                 <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
-                  I craft visually stunning and highly functional web interfaces using{" "}
+                  I design and develop sleek, performant web applications with{" "}
                   <strong className="text-emerald-400">React</strong>,{" "}
                   <strong className="text-emerald-400">TypeScript</strong>, and{" "}
-                  <strong className="text-emerald-400">Tailwind CSS</strong>. From integrating APIs to perfecting
-                  animations and accessibility — I focus on building user experiences that solve real problems.
+                  <strong className="text-emerald-400">Tailwind CSS</strong>. 
+                  Beyond coding, I thrive in <span className="text-emerald-400">Agile environments</span> — 
+                  spearheading project planning, sprint execution, and ensuring teams 
+                  have the clarity and tools to deliver impactful features on time.
                 </p>
               </div>
             </div>
@@ -77,7 +79,7 @@ const HeroSection = ({ handleNavClick }: { handleNavClick: (section: string) => 
               </Button>
             </div>
 
-            {/* Social Links */}
+            {/* Social + Leadership Icon */}
             <div className="flex items-center justify-center lg:justify-start space-x-8 pt-4 md:pt-6">
               <Link
                 href="https://github.com/Phoebe-Emefa"
@@ -99,6 +101,10 @@ const HeroSection = ({ handleNavClick }: { handleNavClick: (section: string) => 
               >
                 <Mail className="w-5 h-5 md:w-6 md:h-6" />
               </Link>
+              <div className="hidden md:flex items-center text-slate-400">
+                <Users className="w-5 h-5 mr-1 text-emerald-400" />
+                <span className="text-sm">Agile Leadership</span>
+              </div>
             </div>
           </div>
 

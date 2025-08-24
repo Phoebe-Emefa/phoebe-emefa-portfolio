@@ -16,6 +16,8 @@ import {
   Images,
   X,
   ArrowUpRight,
+  Code,
+  ShoppingCart,
 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "./ui/button"
@@ -24,7 +26,7 @@ import Link from "next/link"
 
 const ProjectsSection = () => {
   const [activeScreenshot, setActiveScreenshot] = useState<{ [key: number]: number }>({})
-  const [showScreenshots, setShowScreenshots] = useState<{ [key: number]: boolean }>({})
+  const [showScreenshots, setShowScreenshots] = useState<{ [key: number]: boolean }>({ 0: true, 1: true })
 
   const nextScreenshot = useCallback((projectIndex: number) => {
     setActiveScreenshot((prev) => {
@@ -72,40 +74,40 @@ const ProjectsSection = () => {
       subtitle: "Safe Platform for Mothers & Community Building",
       description:
         "A comprehensive platform where mothers can safely share their journeys, seek advice, and connect with credible brands. Features studio booking, e-commerce capabilities, blogging system, and robust admin management for seamless community engagement.",
-      mainImage: "/placeholder.svg?height=600&width=800&text=Talkative+Mom+Platform",
+      mainImage: "/images/home.png",
       screenshots: [
         {
-          image: "/placeholder.svg?height=400&width=600&text=Studio+Booking",
+          image: "/images/studio.png",
           title: "Studio Booking System",
           description: "Easy-to-use booking interface for studio sessions",
         },
         {
-          image: "/placeholder.svg?height=400&width=600&text=Ecommerce+Store",
+          image: "/images/shop.png",
           title: "E-commerce Store",
           description: "Integrated shopping experience for mothers",
         },
         {
-          image: "/placeholder.svg?height=400&width=600&text=Blog+Platform",
+          image: "/images/blogs.png",
           title: "Blogging Platform",
           description: "Share stories and experiences with the community",
         },
         {
-          image: "/placeholder.svg?height=400&width=600&text=Admin+Dashboard",
+          image: "/images/admin.png",
           title: "Admin Dashboard",
           description: "Comprehensive management system for administrators",
         },
       ],
-      tech: ["Next.js", "Tailwind CSS", "Sanity", "Ant Design", "Supabase", "Paystack", "Nodemailer"],
+      tech: ["Next.js", "Tailwind CSS", "Sanity", "Shadcn", "Supabase", "Paystack", "Nodemailer"],
       features: [
         {
           icon: Users,
           title: "Studio Booking",
-          description: "Seamless booking system for studio sessions",
+          description: "Seamless booking system for studio sessions with payment integration",
         },
         {
           icon: BarChart3,
           title: "E-commerce Integration",
-          description: "Full-featured online shopping experience",
+          description: "Full-featured online shopping experience with secure payment processing",
         },
         {
           icon: Activity,
@@ -124,126 +126,67 @@ const ProjectsSection = () => {
       year: "2024",
     },
     {
-      title: "Washking Web Portal",
-      subtitle: "Sanitation Services Management Platform",
+      title: "Petite Elise Preschool",
+      subtitle: "Comprehensive Preschool Management Platform",
       description:
-        "The core platform for managing Washking services, orders, and operations. Washking is a socially responsible enterprise leveraging technology to provide inclusive, equitable access to safe and sustainable sanitation solutions for low-income and underserved communities at affordable prices.",
-      mainImage: "/placeholder.svg?height=600&width=800&text=Washking+Portal",
+        "A comprehensive platform where parents can enroll their children in various school programs, shop for school items, join clubs, and manage their child's educational journey. Features include child registration for various programs, admin management, coding club for kids, and an integrated shop page.",
+      mainImage: "/images/pe-home.png",
       screenshots: [
         {
-          image: "/placeholder.svg?height=400&width=600&text=Customer+Management",
-          title: "Customer Management",
-          description: "Comprehensive customer and order tracking",
+          image: "/images/pe-registration.png",
+          title: "Child Registration",
+          description: "Easy enrollment system for various school programs",
         },
         {
-          image: "/placeholder.svg?height=400&width=600&text=Analytics+Dashboard",
-          title: "Analytics Dashboard",
-          description: "Real-time analytics and reporting system",
+          image: "/images/pe-admin.png",
+          title: "Admin Dashboard",
+          description: "Comprehensive management system for administrators",
         },
         {
-          image: "/placeholder.svg?height=400&width=600&text=Payment+System",
-          title: "Payment Integration",
-          description: "Secure payment processing and management",
+          image: "/images/club.png",
+          title: "Coding Club",
+          description: "Interactive coding activities for children",
         },
         {
-          image: "/placeholder.svg?height=400&width=600&text=Role+Management",
-          title: "Role-Based Access",
-          description: "Advanced permission and access control",
+          image: "/images/pe-shop.png",
+          title: "School Shop",
+          description: "Integrated shopping for school supplies and items",
         },
       ],
-      tech: ["Next.js", "TypeScript", "Ant Design", "TanStack Query"],
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Ant Design", "Supabase", "Paystack"],
       features: [
         {
           icon: Users,
-          title: "Customer & Order Management",
-          description: "Complete customer lifecycle and order tracking",
-        },
-        {
-          icon: BarChart3,
-          title: "Analytics & Reports",
-          description: "Comprehensive analytics and reporting tools",
-        },
-        {
-          icon: TrendingUp,
-          title: "Payment Processing",
-          description: "Secure and efficient payment management",
+          title: "Child Registration System",
+          description: "Comprehensive enrollment for various school programs with payment integration",
         },
         {
           icon: Shield,
-          title: "Role-Based Access Control",
-          description: "Advanced permission management system",
+          title: "Admin Management",
+          description: "Full administrative control and oversight",
+        },
+        {
+          icon: Code,
+          title: "Coding Club for Kids",
+          description: "Interactive programming activities for children",
+        },
+        {
+          icon: ShoppingCart,
+          title: "School Shop",
+          description: "Integrated shopping experience for school items with secure payment processing",
         },
       ],
-      hasLiveDemo: false,
+      hasLiveDemo: true,
       githubUrl: "#",
-      category: "Enterprise Platform",
+      category: "Educational Platform",
       year: "2024",
     },
-    {
-      title: "eHealth Facility Management",
-      subtitle: "Healthcare Operations & Staff Management",
-      description:
-        "A robust healthcare platform enabling facilities to manage staff, track revenue, and gain operational insights. Seamlessly integrates with mobile applications for comprehensive healthcare delivery and patient management.",
-      mainImage: "/placeholder.svg?height=600&width=800&text=eHealth+Platform+Main",
-      screenshots: [
-        {
-          image: "/placeholder.svg?height=400&width=600&text=Staff+Management",
-          title: "Staff Management",
-          description: "Credential verification and scheduling",
-        },
-        {
-          image: "/placeholder.svg?height=400&width=600&text=Revenue+Analytics",
-          title: "Revenue Analytics",
-          description: "Financial tracking and reporting",
-        },
-        {
-          image: "/placeholder.svg?height=400&width=600&text=Patient+Records",
-          title: "Patient Records",
-          description: "Secure patient data management",
-        },
-        {
-          image: "/placeholder.svg?height=400&width=600&text=Mobile+Integration",
-          title: "Mobile Integration",
-          description: "Seamless mobile app connectivity",
-        },
-      ],
-      tech: ["Next.js", "TypeScript", "Chakra UI", "TanStack Query"],
-      features: [
-        {
-          icon: Users,
-          title: "Staff Management",
-          description: "Comprehensive staff and credential management",
-        },
-        {
-          icon: TrendingUp,
-          title: "Revenue Tracking",
-          description: "Real-time financial analytics and reporting",
-        },
-        {
-          icon: Database,
-          title: "Patient Data Management",
-          description: "Secure and compliant patient data handling",
-        },
-        {
-          icon: Smartphone,
-          title: "Mobile Integration",
-          description: "Cross-platform mobile connectivity",
-        },
-      ],
-      hasLiveDemo: false,
-      githubUrl: "#",
-      category: "Healthcare",
-      year: "2023-2025",
-    },
+ 
   ]
 
   // Other smaller projects
   const otherProjects = [
-    {
-      title: "Petite Elise",
-      url: "https://petiteelise.com",
-      tech: ["Next.js", "TypeScript", "Shadcn", "Supabase"],
-    },
+
     {
       title: "Roots and Routes",
       url: "https://roots-and-routes-sand.vercel.app",
@@ -345,22 +288,21 @@ const ProjectsSection = () => {
                         </div>
                       </div>
 
-                      {/* Action Buttons */}
-                      <div className="space-y-3">
-                        {project.hasLiveDemo && (
-                          <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl green-glow">
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            Live Demo
-                          </Button>
-                        )}
-                        <Button
-                          variant="outline"
-                          className="w-full border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 px-6 py-3 rounded-full transition-all duration-300 bg-transparent"
-                        >
-                          <Github className="w-4 h-4 mr-2" />
-                          View Code
-                        </Button>
-                      </div>
+                                             {/* Action Buttons */}
+                       <div className="space-y-3">
+                         {project.hasLiveDemo && (
+                           <Link
+                             href={project.title === "Petite Elise Preschool" ? "https://petiteelise.com" : "https://talkativemom.com/"}
+                             target="_blank"
+                             rel="noopener noreferrer"
+                           >
+                             <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl green-glow">
+                               <ExternalLink className="w-4 h-4 mr-2" />
+                               Live Demo
+                             </Button>
+                           </Link>
+                         )}
+                       </div>
                     </div>
 
                     {/* Project Images & Screenshots - Right Columns */}

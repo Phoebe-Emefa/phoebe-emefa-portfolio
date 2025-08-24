@@ -20,29 +20,29 @@ const AboutSection = () => {
             {/* Main Text */}
             <div className="lg:col-span-2 space-y-8 text-[1.05rem] leading-relaxed text-slate-300">
               <p className="text-xl text-slate-200 font-light leading-relaxed">
-                Hi, I'm <span className="font-medium text-emerald-400">Phoebe Emefa Agbesi</span> — a frontend developer
-                who's recently begun exploring the exciting worlds of backend and mobile development.
+                Hi, I'm <span className="font-medium text-emerald-400">Phoebe Emefa Agbesi</span>. I'm a frontend developer
+                who has recently begun exploring the exciting worlds of backend and mobile development.
               </p>
 
               <p>
-                My tech journey started with frontend — turning ideas into beautiful, interactive web experiences. But
-                I've grown curious about what lies beneath the surface: how servers work, how data flows, and how mobile
+                My tech journey started with frontend, turning ideas into beautiful, interactive web experiences. But
+                I have grown curious about what lies beneath the surface: how servers work, how data flows, and how mobile
                 apps come alive.
               </p>
 
               <p>
-                These days, I'm focused on learning backend technologies and building mobile apps using{" "}
-                <span className="font-medium text-emerald-400">React Native</span>. It's about expanding my toolkit,
+                These days, I am focused on learning backend technologies and building mobile apps using{" "}
+                <span className="font-medium text-emerald-400">React Native</span>. It is about expanding my toolkit,
                 stretching my skills, and crafting seamless user experiences across web and mobile.
               </p>
 
               <p>
-                Whether it's designing intuitive UIs or writing API logic, I'm excited about building clean, meaningful,
+                Whether it is designing intuitive UIs or writing API logic, I am excited about building clean, meaningful,
                 and delightful digital products.
               </p>
 
               <p className="text-lg text-emerald-400 font-medium pt-4">
-                I'm not just building apps — I'm building a future where I can solve real problems with technology.
+                I am not just building apps. I'm building a future where I can solve real problems with technology.
               </p>
             </div>
 
