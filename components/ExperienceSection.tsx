@@ -5,7 +5,7 @@ const ExperienceSection = () => {
     {
       role: "Frontend Developer",
       company: "Peacemaker",
-      period: "Oct 2023 - Present",
+      period: "Oct 2024 - Present",
       location: "Remote",
       description: "Building comprehensive admin dashboards and analytics tools that serve thousands of users daily.",
     },
